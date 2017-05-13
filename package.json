@@ -9,7 +9,8 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "release": "git push && git push --tags && release"
+    "release": "git push && git push --tags && release",
+    "zeit-release": "release"
   },
   "private": true,
   "dependencies": {
