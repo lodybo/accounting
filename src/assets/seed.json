@@ -4,7 +4,7 @@
     "name": "Heroku januari",
     "amount": 7.00,
     "date": 1483225200,
-    "quarter": "2017quarter1",
+    "quarter": "qu201701011030quarter1",
     "vat21": 0.89,
     "vat6": 0.00,
     "owner": "Lody Borgers"
@@ -13,7 +13,7 @@
     "name": "Dropbox januari",
     "amount": 9.00,
     "date": 1483311600,
-    "quarter": "2017quarter1",
+    "quarter": "qu201701011030quarter1",
     "vat21": 0.91,
     "vat6": 0.00,
     "owner": "Lody Borgers"
@@ -22,7 +22,7 @@
     "name": "Anker februari",
     "amount": 151.00,
     "date": 1487113200,
-    "quarter": "2017quarter1",
+    "quarter": "qu201701011030quarter1",
     "vat21": 6.89,
     "vat6": 2.40,
     "owner": "Lody Borgers"
@@ -31,7 +31,7 @@
     "name": "Feedback bassnaren voor Daan",
     "amount": 51.00,
     "date": 1489100400,
-    "quarter": "2017quarter1",
+    "quarter": "qu201701011030quarter1",
     "vat21": 3.43,
     "vat6": 0.00,
     "owner": "Daan Verheijen"
