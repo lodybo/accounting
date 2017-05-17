@@ -27,7 +27,7 @@
         "dev": "environments/environment.ts",
         "prod": "environments/environment.prod.ts"
       },
-      "serviceWorker": true // https://github.com/angular/mobile-toolkit/issues/138#issuecomment-290423194
+      "serviceWorker": true
     }
   ],
   "e2e": {
