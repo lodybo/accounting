@@ -14,7 +14,7 @@ import { MdToolbarModule } from '@angular/material';
 import { AppComponent } from './app.component';
 
 import 'hammerjs';
-import { DashboardComponent } from './dashboard/dashboard.component';
+import { DashboardComponent } from './components/dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
