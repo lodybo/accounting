@@ -1,72 +1,71 @@
 {
-  "transactions": [{
-    "id": "trans201701011935herokujanuari",
-    "name": "Heroku januari",
-    "amount": 7.00,
-    "date": 1483225200,
-    "quarter": "qu201701011030quarter1",
-    "vat21": 0.89,
-    "vat6": 0.00,
-    "owner": "Lody Borgers"
-  }, {
-    "id": "trans201701021045dropboxjanuari",
-    "name": "Dropbox januari",
-    "amount": 9.00,
-    "date": 1483311600,
-    "quarter": "qu201701011030quarter1",
-    "vat21": 0.91,
-    "vat6": 0.00,
-    "owner": "Lody Borgers"
-  }, {
-    "id": "trans201702151213ankerfebruari",
-    "name": "Anker februari",
-    "amount": 151.00,
-    "date": 1487113200,
-    "quarter": "qu201701011030quarter1",
-    "vat21": 6.89,
-    "vat6": 2.40,
-    "owner": "Lody Borgers"
-  }, {
-    "id": "trans201703101312feedbackbassnarenvoordaan",
-    "name": "Feedback bassnaren voor Daan",
-    "amount": 51.00,
-    "date": 1489100400,
-    "quarter": "qu201701011030quarter1",
-    "vat21": 3.43,
-    "vat6": 0.00,
-    "owner": "Daan Verheijen"
-  }],
-  "recurring-transactions": [{
-    "id": "recur201612072021heroku",
-    "name": "Heroku",
-    "amount": 7.00,
-    "day": 1,
-    "month": null,
-    "recurrence": "monthly",
-    "vat21": 0.89,
-    "vat6": 0.00,
-    "owner": "Lody Borgers"
-  }, {
-    "id": "recur201612072030dropbox",
-    "name": "Dropbox",
-    "amount": 9.00,
-    "day": 2,
-    "month": null,
-    "recurrence": "monthly",
-    "vat21": 0.91,
-    "vat6": 0.00,
-    "owner": "Lody Borgers"
-  }],
-  "quarters": [{
-    "id": "qu201701011030quarter1",
-    "quarter": 1,
-    "year": 2017,
-    "current": true,
-    "transactions": [
-      "trans201701011935herokujanuari",
-      "trans201701021045dropboxjanuari",
-      "trans201702151213ankerfebruari",
-      "trans201703101312feedbackbassnarenvoordaan"
-    ]
-  }]
+  "transactions": {
+    "trans201701011935herokujanuari": {
+      "name": "Heroku januari",
+      "amount": 7.00,
+      "date": 1483225200,
+      "quarter": "qu201701011030quarter1",
+      "vat21": 0.89,
+      "vat6": 0.00,
+      "owner": "Lody Borgers"
+    }, "trans201701021045dropboxjanuari": {
+      "name": "Dropbox januari",
+      "amount": 9.00,
+      "date": 1483311600,
+      "quarter": "qu201701011030quarter1",
+      "vat21": 0.91,
+      "vat6": 0.00,
+      "owner": "Lody Borgers"
+    }, "trans201702151213ankerfebruari": {
+      "name": "Anker februari",
+      "amount": 151.00,
+      "date": 1487113200,
+      "quarter": "qu201701011030quarter1",
+      "vat21": 6.89,
+      "vat6": 2.40,
+      "owner": "Lody Borgers"
+    }, "trans201703101312feedbackbassnarenvoordaan": {
+      "name": "Feedback bassnaren voor Daan",
+      "amount": 51.00,
+      "date": 1489100400,
+      "quarter": "qu201701011030quarter1",
+      "vat21": 3.43,
+      "vat6": 0.00,
+      "owner": "Daan Verheijen"
+    }
+  },
+  "recurring-transactions": {
+    "recur201612072021heroku": {
+      "name": "Heroku",
+      "amount": 7.00,
+      "day": 1,
+      "month": null,
+      "recurrence": "monthly",
+      "vat21": 0.89,
+      "vat6": 0.00,
+      "owner": "Lody Borgers"
+    }, "recur201612072030dropbox": {
+      "name": "Dropbox",
+      "amount": 9.00,
+      "day": 2,
+      "month": null,
+      "recurrence": "monthly",
+      "vat21": 0.91,
+      "vat6": 0.00,
+      "owner": "Lody Borgers"
+    }
+  },
+  "quarters": {
+    "qu201701011030quarter1": {
+      "quarter": 1,
+      "year": 2017,
+      "current": true,
+      "transactions": [
+        "trans201701011935herokujanuari",
+        "trans201701021045dropboxjanuari",
+        "trans201702151213ankerfebruari",
+        "trans201703101312feedbackbassnarenvoordaan"
+      ]
+    }
+  }
 }
