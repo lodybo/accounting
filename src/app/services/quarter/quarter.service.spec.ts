@@ -1,12 +1,15 @@
 import { AngularFireDatabase } from 'angularfire2/database';
 import { Observable } from 'rxjs/Rx';
 import { TestBed, inject } from '@angular/core/testing';
+import { MockAngularFireDatabase } from '../../mocks/MockAngularFireDatabase';
 
 import { QuarterService } from './quarter.service';
 
 const databaseSeed = require('../../../assets/seed.json');
 
-describe('QuarterService', () => {
+fdescribe('QuarterService', () => {
+  let service: QuarterService;
+
   beforeEach(() => {
     TestBed.configureTestingModule({
       providers: [QuarterService, {
@@ -15,16 +18,25 @@ describe('QuarterService', () => {
     });
   });
 
-  it('should be created', inject([QuarterService], (service: QuarterService) => {
-    expect(service).toBeTruthy();
+  beforeEach(inject([QuarterService], (quarterService) => {
+    service = quarterService;
   }));
-});
 
-class MockAngularFireDatabase {
-  list() {
-    return Observable.create((observer) => {
-      observer.next(databaseSeed);
-      observer.complete();
+  it('should be created', () => {
+    expect(service).toBeTruthy();
+  });
+
+  it('should return a list with quarters', () => {
+    const call = service.get();
+    call.subscribe((quarters) => {
+      expect(quarters).toEqual(databaseSeed.quarters);
     });
-  }
-}
+  });
+
+  it('should also return the specified quarter if asked for it', () => {
+    const call = service.get('qu201701011030quarter1');
+    call.subscribe((quarters) => {
+      expect(quarters).toEqual(databaseSeed.quarters['qu201701011030quarter1']);
+    });
+  });
+});

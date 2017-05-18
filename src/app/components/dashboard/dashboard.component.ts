@@ -12,7 +12,7 @@ export class DashboardComponent implements OnInit {
   constructor(private db: AngularFireDatabase) { }
 
   ngOnInit() {
-    this.quarters = this.db.list('/quarters');
+    this.quarters = this.db.list('quarters');
   }
 
 }
