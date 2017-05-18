@@ -33,18 +33,15 @@ module.exports = function (config) {
     angularCli: {
       environment: 'dev'
     },
-    reporters: config.angularCli && config.angularCli.codeCoverage
-              ? ['mocha', 'coverage-istanbul', 'jasmine-diff']
-              : ['mocha', 'kjhtml', 'jasmine-diff'],
+    reporters: ['jasmine-diff', 'mocha', 'kjhtml', 'coverage-istanbul'],
+    jasmineDiffReporter: {
+      pretty: true
+    },
     port: 9876,
     colors: true,
     logLevel: config.LOG_INFO,
     autoWatch: true,
     browsers: ['Chrome'],
-    singleRun: false,
-    jasmineDiffReporter: {
-      pretty: true,
-      multiline: true
-    }
+    singleRun: false
   });
 };
