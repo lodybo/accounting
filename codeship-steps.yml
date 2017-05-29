@@ -1,13 +1,13 @@
+- type: serial
+  steps:
+    - name: lint
+      service: codeship
+      command: npm run lint
 - type: parallel
   steps:
-    - type: serial
-      steps:
-      - name: lint
-        service: codeship
-        command: npm run lint
-      - name: test
-        service: codeship
-        command: npm test
+    - name: test
+      service: codeship
+      command: npm test -- --single-run
     - name: build
       service: codeship
       command: npm run build
