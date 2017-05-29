@@ -1,0 +1,9 @@
+- type: parallel
+  steps:
+    # - name: test
+    #   service: codeship
+    #   command: npm test -- --log-level debug
+    - name: build
+      service: codeship
+      command: npm run ci-build
+
