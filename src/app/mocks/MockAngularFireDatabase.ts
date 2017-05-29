@@ -1,5 +1,5 @@
 import { Observable } from 'rxjs/Rx';
-const databaseSeed = require('../../assets/seed.json');
+const databaseSeed = require('../../assets/seed');
 
 export class MockAngularFireDatabase {
   list(id: string) {
