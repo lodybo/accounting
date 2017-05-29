@@ -4,7 +4,7 @@
       steps:
       - name: lint
         service: codeship
-        command: npm lint
+        command: npm run lint
       - name: test
         service: codeship
         command: npm test

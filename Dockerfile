@@ -8,3 +8,4 @@ RUN npm install
 
 # Copy source
 COPY . .
+RUN ls -l
